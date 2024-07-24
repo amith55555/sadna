@@ -3,3 +3,5 @@ deployment:
     replicas: 1
     color: blue
     weight: 5
+
+
