@@ -2,8 +2,6 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: {{ .Chart.Name }}
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
 spec:
   replicas: {{ .Values.ReplicaNumber }}
   selector:
