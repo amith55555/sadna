@@ -5,11 +5,11 @@ type: application
 dependencies:
   - name: amit
     repository: "oci://ghcr.io/amith55555/helm"
-    version: "1.0.0"
+    version: "1.0.2"
     alias: deploy1
   - name: amit
     repository: "oci://ghcr.io/amith55555/helm"
-    version: "1.0.0"
+    version: "1.0.2"
     alias: deploy2
-version: 1.0.0
-appVersion: "1.0.0"
+version: 1.0.2
+appVersion: "1.0.2"

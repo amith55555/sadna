@@ -1,5 +1,8 @@
 deploy1: 
   ReplicaNumber: 1
+  argocd:
+    syncwave:
+      deployment: 5
 
   containers:
       containerPort: 8080
@@ -11,6 +14,9 @@ deploy1:
 
 deploy2: 
   ReplicaNumber: 1
+  argocd:
+    syncwave:
+      deployment: 10
 
   containers:
     containerPort: 8080
