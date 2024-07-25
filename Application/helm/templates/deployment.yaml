@@ -15,7 +15,7 @@ spec:
         app: {{ .Chart.Name }}
       annotations:
         argocd.argoproj.io/sync-wave: "1"
-        checksum/config: {{ include (print $.Template.BasePath "./Configmap.yaml") . | sha256sum }}
+        checksum/config: {{ include (print $.Template.BasePath "/Configmap.yaml") . | sha256sum }}
     spec:
       volumes:
         - name: index-html
