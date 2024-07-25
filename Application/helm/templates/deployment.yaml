@@ -9,8 +9,6 @@ spec:
       app: {{ .Chart.Name }}
   template:
     metadata:
-      annotations:
-        checksum/config: {{ include ("mylibchart.configmap") "/configmap.yaml") . | sha256sum }}
       labels:
         app: {{ .Chart.Name }}
     spec:
